@@ -10,7 +10,7 @@ public class AnimatorController : MonoBehaviour
 	private GroundedComponent grounded;
 	private Animator animator;
 
-	public SpriteRenderer CatSprite;
+	public Transform CatView;
 
 	public void Start()
 	{
@@ -27,11 +27,11 @@ public class AnimatorController : MonoBehaviour
 
 		if (myRigidbody.velocity.x < 0)
 		{
-			CatSprite.flipX = true;
+			CatView.localScale = new Vector3(-1, 1, 1);
 		}
 		else if (myRigidbody.velocity.x > 0)
 		{
-			CatSprite.flipX = false;
+			CatView.localScale = Vector3.one;
 		}
 	}
 }

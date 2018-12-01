@@ -79,9 +79,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Grounded
     m_EventTreshold: 0
-  - m_ConditionMode: 4
+  - m_ConditionMode: 3
     m_ConditionEvent: HorizontalVelocity
-    m_EventTreshold: -0.1
+    m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102341039140749480}
   m_Solo: 0
@@ -135,42 +135,11 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Grounded
     m_EventTreshold: 0
-  - m_ConditionMode: 3
-    m_ConditionEvent: HorizontalVelocity
-    m_EventTreshold: -0.1
   - m_ConditionMode: 4
     m_ConditionEvent: HorizontalVelocity
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102259717307371552}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 0
---- !u!1101 &1101978709128856238
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Grounded
-    m_EventTreshold: 0
-  - m_ConditionMode: 3
-    m_ConditionEvent: HorizontalVelocity
-    m_EventTreshold: 0.1
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102341039140749480}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -312,7 +281,6 @@ AnimatorStateMachine:
   m_AnyStateTransitions:
   - {fileID: 1101774528104199412}
   - {fileID: 1101019997628730450}
-  - {fileID: 1101978709128856238}
   - {fileID: 1101833383537823940}
   - {fileID: 1101493467969279712}
   m_EntryTransitions: []

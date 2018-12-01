@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GroundedComponent : MonoBehaviour
 {
+	Collider2D[] _colliders;
+
+
 	[HideInInspector]
 	public bool isGrounded;
 
@@ -17,11 +20,11 @@ public class GroundedComponent : MonoBehaviour
 		//
 		// Check for ground collisions and set variables acordingly
 		//
-		Collider2D[] colliders = Physics2D.OverlapBoxAll((Vector2)transform.position + CenterPosion, BoxSize, 0f, LayerMask.NameToLayer("Floor"));
+		_colliders = Physics2D.OverlapBoxAll((Vector2)transform.position + CenterPosion, BoxSize, 0f, 1 << LayerMask.NameToLayer("Floor"));
 
-		for (int i = 0; i < colliders.Length; i++)
+		for (int i = 0; i < _colliders.Length; i++)
 		{
-			if (colliders[i].gameObject != gameObject)
+			if (_colliders[i].gameObject != gameObject)
 			{
 				isGrounded = true;
 			}
