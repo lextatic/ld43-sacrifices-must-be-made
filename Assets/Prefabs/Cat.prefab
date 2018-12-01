@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
-  CenterPosion: {x: 0, y: -0.58}
+  CenterPosition: {x: 0, y: -0.58}
   BoxSize: {x: 0.79, y: 0.2}
 --- !u!114 &5669242902539473020
 MonoBehaviour:

@@ -10,7 +10,7 @@ public class GroundedComponent : MonoBehaviour
 	[HideInInspector]
 	public bool isGrounded;
 
-	public Vector2 CenterPosion;
+	public Vector2 CenterPosition;
 	public Vector2 BoxSize;
     
     void FixedUpdate()
@@ -20,7 +20,7 @@ public class GroundedComponent : MonoBehaviour
 		//
 		// Check for ground collisions and set variables acordingly
 		//
-		_colliders = Physics2D.OverlapBoxAll((Vector2)transform.position + CenterPosion, BoxSize, 0f, 1 << LayerMask.NameToLayer("Floor"));
+		_colliders = Physics2D.OverlapBoxAll((Vector2)transform.position + CenterPosition, BoxSize, 0f, 1 << LayerMask.NameToLayer("Floor"));
 
 		for (int i = 0; i < _colliders.Length; i++)
 		{
@@ -45,6 +45,6 @@ public class GroundedComponent : MonoBehaviour
 			Gizmos.color = new Color(1f, 0f, 0f, 0.2f);
 		}
 
-		Gizmos.DrawCube((Vector2)transform.position + CenterPosion, BoxSize);
+		Gizmos.DrawCube((Vector2)transform.position + CenterPosition, BoxSize);
 	}
 }
