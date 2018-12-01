@@ -22,7 +22,7 @@ public class AnimatorController : MonoBehaviour
 	public void Update()
 	{
 		animator.SetBool("Grounded", grounded.isGrounded);
-		animator.SetFloat("HorizontalVelocity", myRigidbody.velocity.x);
+		animator.SetFloat("HorizontalVelocity", Mathf.Abs(myRigidbody.velocity.x));
 		animator.SetFloat("VerticalVelocity", myRigidbody.velocity.y);
 
 		if (myRigidbody.velocity.x < 0)

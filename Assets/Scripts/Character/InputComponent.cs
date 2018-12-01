@@ -5,7 +5,6 @@ public class InputComponent : MonoBehaviour
 	[HideInInspector]
 	public float Horizontal;
 
-	[HideInInspector]
 	public bool Jump;
 
 	[HideInInspector]
