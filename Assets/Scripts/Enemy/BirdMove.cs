@@ -18,9 +18,9 @@ public class BirdMove : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-		DrawNewPosition();
-		viewMoveUp = true;
 		centerPositon = transform.position;
+		viewMoveUp = true;
+		DrawNewPosition();
 	}
 
 	public void DrawNewPosition()

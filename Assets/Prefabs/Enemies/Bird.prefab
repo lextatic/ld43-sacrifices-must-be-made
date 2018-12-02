@@ -15,8 +15,8 @@ MonoBehaviour:
   Radius: 2
   MovementSpeed: 1
   View: {fileID: 3303755431560113185}
-  viewMoveRange: 0.3
-  viewMoveVelocity: 5
+  viewMoveRange: 0.1
+  viewMoveVelocity: 2
 --- !u!1001 &3220283012648229038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27,6 +27,22 @@ PrefabInstance:
     - target: {fileID: 3303755432963979156}
       propertyPath: m_Name
       value: Bird
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303755432963979155}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303755432963979155}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303755432963979155}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303755432963979155}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3303755432963979155}
       propertyPath: m_LocalPosition.x
@@ -71,6 +87,14 @@ PrefabInstance:
     - target: {fileID: 3303755432963979155}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303755432963979156}
+      propertyPath: m_Name
+      value: Bird
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303755432963979156}
+      propertyPath: m_Name
+      value: Bird
       objectReference: {fileID: 0}
     - target: {fileID: 101878932731260730, guid: 286077468237da145a34871835af2ccd,
         type: 3}

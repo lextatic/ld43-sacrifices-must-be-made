@@ -55,7 +55,7 @@ public class Intro : MonoBehaviour
 		yield return new WaitForSeconds(1f);
 
 		IntroText.text = Texts[3];
-		yield return StartCoroutine(ShowText(Color.white));
+		yield return StartCoroutine(ShowText(Color.white, 5f));
 
 		EndIntro();
 	}
@@ -89,12 +89,12 @@ public class Intro : MonoBehaviour
 		StopCoroutine(introCoroutine);
 	}
 
-	private IEnumerator ShowText(Color color)
+	private IEnumerator ShowText(Color color, float time = 3f)
 	{
 		baseColor = IntroText.color;
 		startTime = Time.time;
 		targetColor = color;
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(time);
 
 		baseColor = IntroText.color;
 		startTime = Time.time;

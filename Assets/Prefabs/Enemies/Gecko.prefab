@@ -1,134 +1,122 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &8946754058580909169
+--- !u!114 &4063219949462872678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7930233174461553897}
+  m_GameObject: {fileID: 5571344956998496361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cf40911a8c37e44bc9252604bbdaa5, type: 3}
+  m_Script: {fileID: 11500000, guid: c8ece5e0e19334f4b85756fd03174594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WalkSpeed: 0
-  RunSpeed: 0
-  Mousehole: {fileID: 0}
-  WaitTime: 0
---- !u!1001 &8026588089319584723
+  WalkSpeed: 5
+  Point1: {fileID: 0}
+  Point2: {fileID: 0}
+--- !u!1001 &5492305639235772243
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7930233174461553897}
+    - target: {fileID: 5571344956998496361}
       propertyPath: m_Name
-      value: Mouse
+      value: Gecko
       objectReference: {fileID: 0}
-    - target: {fileID: 2506350681260091486}
+    - target: {fileID: 113967800519967966}
       propertyPath: Value
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233173587347266}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7930233173587347266}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7930233173587347266}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7930233173587347266}
+    - target: {fileID: 5571344956266834882}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 696321ea29fff1f45bdafbbed9b13ae0,
+      objectReference: {fileID: 21300000, guid: 06428c0ca744a554490e9315126dc56f,
         type: 3}
-    - target: {fileID: 2506350681260091486}
-      propertyPath: Value
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7930233173587347266}
-      propertyPath: m_Color.r
-      value: 0.6037736
-      objectReference: {fileID: 0}
-    - target: {fileID: 7930233173587347266}
-      propertyPath: m_Color.g
-      value: 0.6037736
-      objectReference: {fileID: 0}
-    - target: {fileID: 7930233173587347266}
-      propertyPath: m_Color.b
-      value: 0.6037736
-      objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553897}
+    - target: {fileID: 5571344956266834882}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06428c0ca744a554490e9315126dc56f,
+        type: 3}
+    - target: {fileID: 5571344956998496361}
       propertyPath: m_Name
-      value: Mouse
+      value: Gecko
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496361}
+      propertyPath: m_Name
+      value: Gecko
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571344956998496366}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7930233174461553902}
+    - target: {fileID: 5571344956998496366}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 101878932731260730, guid: 286077468237da145a34871835af2ccd,
         type: 3}
       propertyPath: m_Name
-      value: Mouse
+      value: Gecko
       objectReference: {fileID: 0}
     - target: {fileID: 5596975969414323085, guid: 286077468237da145a34871835af2ccd,
         type: 3}
       propertyPath: Value
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 101878932731260733, guid: 286077468237da145a34871835af2ccd,
         type: 3}
@@ -144,37 +132,37 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 696321ea29fff1f45bdafbbed9b13ae0,
+      objectReference: {fileID: 21300000, guid: 06428c0ca744a554490e9315126dc56f,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 286077468237da145a34871835af2ccd, type: 3}
---- !u!1 &7930233174461553897 stripped
+--- !u!1 &5571344956998496361 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 101878932731260730, guid: 286077468237da145a34871835af2ccd,
     type: 3}
-  m_PrefabInstance: {fileID: 8026588089319584723}
+  m_PrefabInstance: {fileID: 5492305639235772243}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7930233174461553902 stripped
+--- !u!4 &5571344956998496366 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 101878932731260733, guid: 286077468237da145a34871835af2ccd,
     type: 3}
-  m_PrefabInstance: {fileID: 8026588089319584723}
+  m_PrefabInstance: {fileID: 5492305639235772243}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2506350681260091486 stripped
+--- !u!114 &113967800519967966 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5596975969414323085, guid: 286077468237da145a34871835af2ccd,
     type: 3}
-  m_PrefabInstance: {fileID: 8026588089319584723}
+  m_PrefabInstance: {fileID: 5492305639235772243}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7930233174461553897}
+  m_GameObject: {fileID: 5571344956998496361}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd84ba1f191d45d43851028e50819fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &7930233173587347266 stripped
+--- !u!212 &5571344956266834882 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 101878930926417041, guid: 286077468237da145a34871835af2ccd,
     type: 3}
-  m_PrefabInstance: {fileID: 8026588089319584723}
+  m_PrefabInstance: {fileID: 5492305639235772243}
   m_PrefabAsset: {fileID: 0}

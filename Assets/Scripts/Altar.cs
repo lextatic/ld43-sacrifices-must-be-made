@@ -70,7 +70,9 @@ public class Altar : MonoBehaviour
 				{
 					if(playerInventory.CarriedItem == TypeAndPrefabs[i].EnemyType)
 					{
-						Instantiate(TypeAndPrefabs[i].Prefab, transform.position + Vector3.up * 0.5f + Vector3.right * UnityEngine.Random.Range(-0.1f, 0.1f), Quaternion.identity);
+						Vector3 euler = Quaternion.identity.eulerAngles;
+						euler.z = UnityEngine.Random.Range(0f, 360f);
+						Instantiate(TypeAndPrefabs[i].Prefab, transform.position + Vector3.up * 0.5f + Vector3.right * UnityEngine.Random.Range(-0.1f, 0.1f), Quaternion.Euler(euler));
 					}
 				}
 
@@ -131,6 +133,7 @@ public class Altar : MonoBehaviour
 
 		yield return new WaitForSeconds(1f);
 
+		PlayerInput.Run = false;
 		PlayerInput.Horizontal = -1;
 
 		yield return new WaitForSeconds(1f);
