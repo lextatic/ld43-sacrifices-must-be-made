@@ -94,14 +94,26 @@ MonoBehaviour:
   Dialogs:
   - Dialog: COMING!
     DialogBackground: {fileID: 0}
-  - Dialog: Oh...
+    Clip: {fileID: 8300000, guid: 27ffebeceffe20440b784ba7562670db, type: 3}
+  - Dialog: Oh my glob...
     DialogBackground: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 0436491b650a165418bf24270f8e14b1, type: 3}
   - Dialog: Okay, come on.
     DialogBackground: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 2f968552523b85a4e96627fd7070239a, type: 3}
   - Dialog: BABE! THE CAT IS BEING WEIRD AGAIN!
     DialogBackground: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 4699eb5942d619d459fe7128bbb71169, type: 3}
   EndGameFadeSprite: {fileID: 0}
   EndTexts: {fileID: 0}
+  AudioSource: {fileID: 0}
+  MeowClip: {fileID: 8300000, guid: 3a8cb3ad28422ac4086fa254e4e4b3bd, type: 3}
+  DoorOpenClip: {fileID: 8300000, guid: d9b425944f64a92498ae00c8ff4168dc, type: 3}
+  DoorCloseClip: {fileID: 8300000, guid: 960bf07694ac8c6408501e6bf163fdb0, type: 3}
+  SacrificeDrop: {fileID: 11400000, guid: 5d6826cd8acce704e899eaf3d5bc7d06, type: 2}
+  MenuMusic: {fileID: 0}
+  GameMusic: {fileID: 0}
+  MenuMusicVolume: 0.5
 --- !u!1 &1864622210361323543
 GameObject:
   m_ObjectHideFlags: 0

@@ -40,6 +40,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7930233173587347266}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 696321ea29fff1f45bdafbbed9b13ae0,
+        type: 3}
+    - target: {fileID: 4378368382762770938}
+      propertyPath: AudioEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 6fe2e56b4fca28245ad2cf965196936b,
+        type: 2}
+    - target: {fileID: 2506350681260091486}
+      propertyPath: Value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506350681260091486}
+      propertyPath: Value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930233173587347266}
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
@@ -56,10 +74,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 696321ea29fff1f45bdafbbed9b13ae0,
         type: 3}
-    - target: {fileID: 2506350681260091486}
-      propertyPath: Value
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7930233173587347266}
       propertyPath: m_Color.r
       value: 0.6037736
@@ -75,6 +89,18 @@ PrefabInstance:
     - target: {fileID: 7930233174461553897}
       propertyPath: m_Name
       value: Mouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930233174461553897}
+      propertyPath: m_Name
+      value: Mouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930233174461553902}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930233174461553902}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7930233174461553902}
       propertyPath: m_LocalPosition.x
@@ -146,6 +172,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 696321ea29fff1f45bdafbbed9b13ae0,
         type: 3}
+    - target: {fileID: 6027854313200947753, guid: 286077468237da145a34871835af2ccd,
+        type: 3}
+      propertyPath: AudioEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 6fe2e56b4fca28245ad2cf965196936b,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 286077468237da145a34871835af2ccd, type: 3}
 --- !u!1 &7930233174461553897 stripped
@@ -170,6 +202,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd84ba1f191d45d43851028e50819fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4378368382762770938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6027854313200947753, guid: 286077468237da145a34871835af2ccd,
+    type: 3}
+  m_PrefabInstance: {fileID: 8026588089319584723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7930233174461553897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ca9a2bfd1a0754bb0cdead7e88fe83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &7930233173587347266 stripped

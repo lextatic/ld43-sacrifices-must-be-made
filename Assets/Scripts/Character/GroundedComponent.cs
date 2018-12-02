@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class GroundedComponent : MonoBehaviour
 {
-	Collider2D[] _colliders;
-
-
+	private Collider2D[] _colliders;
+	
 	[HideInInspector]
 	public bool isGrounded;
 
 	public Vector2 CenterPosition;
 	public Vector2 BoxSize;
-    
-    void FixedUpdate()
+
+	void FixedUpdate()
     {
 		isGrounded = false;
-
+	
 		//
 		// Check for ground collisions and set variables acordingly
 		//
@@ -27,6 +26,7 @@ public class GroundedComponent : MonoBehaviour
 			if (_colliders[i].gameObject != gameObject)
 			{
 				isGrounded = true;
+				return;
 			}
 		}
 	}

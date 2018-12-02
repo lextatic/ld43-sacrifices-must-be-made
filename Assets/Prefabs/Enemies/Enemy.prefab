@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 101878932731260733}
   - component: {fileID: 101878932731260732}
   - component: {fileID: 5596975969414323085}
+  - component: {fileID: 6027854313200947753}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Sacrifice
@@ -165,3 +166,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Value: 1
+--- !u!114 &6027854313200947753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101878932731260730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ca9a2bfd1a0754bb0cdead7e88fe83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 0}
+  AudioEvent: {fileID: 0}

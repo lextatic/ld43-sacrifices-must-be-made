@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b98e6711b05d34f87432fbb508f2cf, type: 3}
+  m_Name: JumpAudioEvent
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: f15941025150d18499d9d274287f098b, type: 3}
+  - {fileID: 8300000, guid: 1516adc50917abd45b09102035b15c42, type: 3}
+  - {fileID: 8300000, guid: 28dcd74c2b9bf6945921765a25d18e0c, type: 3}
+  volume:
+    minValue: 1
+    maxValue: 1
+  pitch:
+    minValue: 0.8
+    maxValue: 1.2

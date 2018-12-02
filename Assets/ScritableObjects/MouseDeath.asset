@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b98e6711b05d34f87432fbb508f2cf, type: 3}
+  m_Name: MouseDeath
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 5c8ac8ecc4f704c449729dd1b22a15c7, type: 3}
+  - {fileID: 8300000, guid: 3f7fc86b3fa602b42ab01d1d5ad04890, type: 3}
+  - {fileID: 8300000, guid: fb8e4223114e1384f8cf381c7d44bf57, type: 3}
+  volume:
+    minValue: 1
+    maxValue: 1
+  pitch:
+    minValue: 0.6
+    maxValue: 0.8

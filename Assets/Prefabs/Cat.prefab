@@ -182,6 +182,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CatView: {fileID: 6535522617402619318}
+  AudioSource: {fileID: 0}
+  LandAudioEvent: {fileID: 11400000, guid: 537e8ec5675477147b70d21cbc24a3ea, type: 2}
+  PurrAudioEvent: {fileID: 11400000, guid: d498a1fde5805dd4db3e4945a6e0b05d, type: 2}
 --- !u!50 &1312916475655458836
 Rigidbody2D:
   serializedVersion: 4
@@ -250,6 +253,8 @@ MonoBehaviour:
   RunSpeed: 4
   TimeToPeak: 0.4
   JumpHeight: 3
+  AudioSource: {fileID: 0}
+  JumpAudioEvent: {fileID: 11400000, guid: d131ce09db4441d4baf0ae47bb20cb4a, type: 2}
 --- !u!114 &1312916475655458833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +323,7 @@ Transform:
   m_GameObject: {fileID: 8275812529142409203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 970463326}
   m_Father: {fileID: 1312916475655458834}
@@ -369,6 +374,6 @@ SpriteRenderer:
   m_Size: {x: 1.4375, y: 1.4375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

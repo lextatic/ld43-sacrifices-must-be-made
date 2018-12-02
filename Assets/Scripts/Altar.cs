@@ -19,6 +19,7 @@ public class Altar : MonoBehaviour
 	{
 		public string Dialog;
 		public GameObject DialogBackground;
+		public AudioClip Clip;
 	}
 
 	private int victoryCondition;
@@ -26,6 +27,7 @@ public class Altar : MonoBehaviour
 	private int dialogCount;
 	private bool endGame;
 	private bool enableRestart;
+	private bool lerpMusicVolumes;
 
 	public Inventory playerInventory;
 	public SpriteRenderer playerSacrificeSprite;
@@ -48,6 +50,17 @@ public class Altar : MonoBehaviour
 
 	public GameObject EndTexts;
 
+	public AudioSource AudioSource;
+	public AudioClip MeowClip;
+	public AudioClip DoorOpenClip;
+	public AudioClip DoorCloseClip;
+
+	public SimpleAudioEvent SacrificeDrop;
+
+	public AudioSource MenuMusic;
+	public AudioSource GameMusic;
+	public float MenuMusicVolume;
+
 	public void Start()
 	{
 		var enemies = FindObjectsOfType<EnemyType>();
@@ -56,6 +69,7 @@ public class Altar : MonoBehaviour
 		dialogCount = 0;
 		endGame = false;
 		enableRestart = false;
+		lerpMusicVolumes = false;
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
@@ -73,8 +87,11 @@ public class Altar : MonoBehaviour
 						Vector3 euler = Quaternion.identity.eulerAngles;
 						euler.z = UnityEngine.Random.Range(0f, 360f);
 						Instantiate(TypeAndPrefabs[i].Prefab, transform.position + Vector3.up * 0.5f + Vector3.right * UnityEngine.Random.Range(-0.1f, 0.1f), Quaternion.Euler(euler));
+						continue;
 					}
 				}
+
+				SacrificeDrop.Play(AudioSource);
 
 				playerInventory.CarriedItem = Inventory.Item.NONE;
 
@@ -99,6 +116,9 @@ public class Altar : MonoBehaviour
 		yield return new WaitForSeconds(1f);
 
 		MeowDialogue.SetActive(true);
+		AudioSource.volume = 1f;
+		AudioSource.pitch = 1f;
+		AudioSource.PlayOneShot(MeowClip);
 
 		yield return new WaitForSeconds(2f);
 
@@ -118,6 +138,8 @@ public class Altar : MonoBehaviour
 		AnimationTilemaps.SetActive(true);
 
 		ClosedDoor.SetActive(false);
+		AudioSource.volume = 0.2f;
+		AudioSource.PlayOneShot(DoorOpenClip);
 
 		yield return new WaitForSeconds(1f);
 
@@ -143,7 +165,9 @@ public class Altar : MonoBehaviour
 		yield return new WaitForSeconds(1f);
 
 		ClosedDoor.SetActive(true);
-
+		AudioSource.volume = 0.2f;
+		AudioSource.PlayOneShot(DoorCloseClip);
+		
 		yield return new WaitForSeconds(1f);
 
 		ShowNextDialog();
@@ -151,6 +175,8 @@ public class Altar : MonoBehaviour
 		yield return new WaitForSeconds(2f);
 
 		endGame = true;
+		MenuMusic.Play();
+		lerpMusicVolumes = true;
 
 		yield return new WaitForSeconds(4f);
 
@@ -165,6 +191,8 @@ public class Altar : MonoBehaviour
 		TextMesh.text = Dialogs[dialogCount].Dialog;
 		Dialogs[dialogCount].DialogBackground.SetActive(true);
 		TextMesh.gameObject.SetActive(true);
+		AudioSource.volume = 1f;
+		AudioSource.PlayOneShot(Dialogs[dialogCount].Clip);
 		dialogCount++;
 	}
 
@@ -185,6 +213,19 @@ public class Altar : MonoBehaviour
 		if(enableRestart && Input.anyKeyDown)
 		{
 			SceneManager.LoadScene(0);
+		}
+
+		if (lerpMusicVolumes)
+		{
+			MenuMusic.volume = Mathf.Lerp(MenuMusic.volume, MenuMusicVolume, Time.deltaTime);
+			GameMusic.volume = Mathf.Lerp(GameMusic.volume, 0, Time.deltaTime);
+
+			if (GameMusic.volume <= 0.1f && MenuMusicVolume - MenuMusic.volume < 0.1f)
+			{
+				MenuMusic.volume = MenuMusicVolume;
+				GameMusic.volume = 0;
+				lerpMusicVolumes = false;
+			}
 		}
 	}
 }

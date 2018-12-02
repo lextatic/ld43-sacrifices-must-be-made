@@ -13,6 +13,8 @@ public class Intro : MonoBehaviour
 	private bool fading;
 	private float startTime;
 	private Coroutine introCoroutine;
+	private bool lerpMusicVolumes;
+	
 
 	public InputComponent PlayerInput;
 	public SpriteRenderer IntroBackground;
@@ -20,6 +22,9 @@ public class Intro : MonoBehaviour
 	public string[] Texts;
 	public Color SacrificesColor;
 
+	public AudioSource MenuMusic;
+	public AudioSource GameMusic;
+	public float GameMusicVolume;
 
 	// Start is called before the first frame update
 	public void Start()
@@ -30,6 +35,7 @@ public class Intro : MonoBehaviour
 		PlayerInput.enabled = false;
 		IntroText.gameObject.SetActive(false);
 		fading = false;
+		lerpMusicVolumes = false;
 
 		introCoroutine = StartCoroutine(PlayIntro());
 	}
@@ -54,6 +60,7 @@ public class Intro : MonoBehaviour
 
 		yield return new WaitForSeconds(1f);
 
+		lerpMusicVolumes = true;
 		IntroText.text = Texts[3];
 		yield return StartCoroutine(ShowText(Color.white, 5f));
 
@@ -77,6 +84,19 @@ public class Intro : MonoBehaviour
 				EndIntro();
 			}
 		}
+
+		if(lerpMusicVolumes)
+		{
+			MenuMusic.volume = Mathf.Lerp(MenuMusic.volume, 0, Time.deltaTime);
+			GameMusic.volume = Mathf.Lerp(GameMusic.volume, GameMusicVolume, Time.deltaTime);
+
+			if (MenuMusic.volume <= 0.1f && GameMusicVolume - GameMusic.volume < 0.1f)
+			{
+				MenuMusic.volume = 0;
+				GameMusic.volume = GameMusicVolume;
+				lerpMusicVolumes = false;
+			}
+		}
 	}
 
 	private void EndIntro()
@@ -85,6 +105,7 @@ public class Intro : MonoBehaviour
 		PlayerInput.enabled = true;
 		IntroText.gameObject.SetActive(false);
 		IntroBackground.color = fadeColor;
+		lerpMusicVolumes = true;
 
 		StopCoroutine(introCoroutine);
 	}

@@ -9,14 +9,20 @@ public class AnimatorController : MonoBehaviour
 	private Rigidbody2D myRigidbody;
 	private GroundedComponent grounded;
 	private Animator animator;
+	private bool lastFrameGrounded;
 
 	public Transform CatView;
+
+	public AudioSource AudioSource;
+	public SimpleAudioEvent LandAudioEvent;
+	public SimpleAudioEvent PurrAudioEvent;
 
 	public void Start()
 	{
 		myRigidbody = GetComponent<Rigidbody2D>();
 		grounded = GetComponent<GroundedComponent>();
 		animator = GetComponent<Animator>();
+		lastFrameGrounded = true;
 	}
 
 	public void Update()
@@ -33,5 +39,17 @@ public class AnimatorController : MonoBehaviour
 		{
 			CatView.localScale = Vector3.one;
 		}
+
+		if(!lastFrameGrounded && grounded.isGrounded)
+		{
+			LandAudioEvent.Play(AudioSource);
+
+			if (Random.Range(0f, 1f) < 0.1f)
+			{
+				PurrAudioEvent.Play(AudioSource);
+			}
+		}
+
+		lastFrameGrounded = grounded.isGrounded;
 	}
 }

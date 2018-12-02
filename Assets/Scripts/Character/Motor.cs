@@ -18,8 +18,9 @@ public class Motor : MonoBehaviour
 
 	private float _jumpVelocity = 5f;
 
+	public AudioSource AudioSource;
+	public SimpleAudioEvent JumpAudioEvent;
 	
-
 	public void Start()
 	{
 		input = GetComponent<InputComponent>();
@@ -48,6 +49,7 @@ public class Motor : MonoBehaviour
 			if (grounded.isGrounded)
 			{
 				velocity.y = _jumpVelocity;
+				JumpAudioEvent.Play(AudioSource);
 			}
 		}
 
