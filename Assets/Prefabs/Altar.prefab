@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864622209732873776}
   - component: {fileID: 1864622209732873777}
+  - component: {fileID: 419278914}
   m_Layer: 0
   m_Name: Altar
   m_TagString: Altar
@@ -58,6 +59,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &419278914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864622209732873806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad3756e97b52b24fb65d8362b861ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 0}
+  playerSacrificeSprite: {fileID: 0}
+  PlayerInput: {fileID: 0}
+  TypeAndPrefabs:
+  - EnemyType: 1
+    Prefab: {fileID: 2421886241160202111, guid: 95854846ae962494d9df46dfe03d3e73,
+      type: 3}
+  - EnemyType: 2
+    Prefab: {fileID: 1986707213206202223, guid: 952d0cc77b7f2a94aa5e1ada778d6176,
+      type: 3}
+  - EnemyType: 3
+    Prefab: {fileID: 2067308941592110405, guid: f61e6de163af6dd448e168a8983da1dc,
+      type: 3}
+  MeowDialogue: {fileID: 0}
+  ClosedDoor: {fileID: 0}
+  OriginalTilemap: {fileID: 0}
+  AnimationTilemaps: {fileID: 0}
+  TextMesh: {fileID: 0}
+  DialogBackground: {fileID: 0}
+  ScreamDialogBackground: {fileID: 0}
+  Dialogs:
+  - Dialog: COMING!
+    DialogBackground: {fileID: 0}
+  - Dialog: Oh...
+    DialogBackground: {fileID: 0}
+  - Dialog: Okay, come on.
+    DialogBackground: {fileID: 0}
+  - Dialog: BABE! THE CAT IS BEING WEIRD AGAIN!
+    DialogBackground: {fileID: 0}
+  EndGameFadeSprite: {fileID: 0}
+  EndTexts: {fileID: 0}
 --- !u!1 &1864622210361323543
 GameObject:
   m_ObjectHideFlags: 0
