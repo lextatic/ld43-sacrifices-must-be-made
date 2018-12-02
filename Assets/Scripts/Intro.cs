@@ -24,6 +24,7 @@ public class Intro : MonoBehaviour
 	// Start is called before the first frame update
 	public void Start()
     {
+		IntroBackground.gameObject.SetActive(true);
 		introEnded = false;
 		introStarted = false;
 		PlayerInput.enabled = false;
