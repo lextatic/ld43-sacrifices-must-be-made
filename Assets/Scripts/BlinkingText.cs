@@ -17,7 +17,7 @@ public class BlinkingText : MonoBehaviour
 	void Start()
     {
 		TextMesh = GetComponent<TextMeshPro>();
-		fading = false;
+		fading = true;
 		baseColor = fullColor;
 		targetColor = fadedColor;
 		TextMesh.color = fullColor;
@@ -27,7 +27,7 @@ public class BlinkingText : MonoBehaviour
 
     void Update()
     {
-		TextMesh.color = Color.Lerp(baseColor, targetColor, ((Time.time - startTime) / blinkDuration));
+		TextMesh.color = Color.Lerp(baseColor, targetColor, (Time.time - startTime) / blinkDuration);
     }
 
 	public IEnumerator BlinkLoop()

@@ -514,7 +514,7 @@ MonoBehaviour:
   Dialogs:
   - Dialog: COMING!
     DialogBackground: {fileID: 763377910}
-  - Dialog: Oh god...
+  - Dialog: Oh...
     DialogBackground: {fileID: 562570493}
   - Dialog: Okay, come on.
     DialogBackground: {fileID: 562570493}
@@ -858,6 +858,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &958095027 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 958095027, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+    type: 3}
+  m_PrefabInstance: {fileID: 8478162243106095109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1063944761 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8478162243620258364, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
@@ -906,6 +912,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1968597531 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5916760120542890297, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+    type: 3}
+  m_PrefabInstance: {fileID: 8478162243106095109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1986039636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1312916475655458834, guid: 85f1dc7906b795d41a481075b369663d,
@@ -1182,12 +1200,12 @@ PrefabInstance:
     - target: {fileID: 1312916475655458834, guid: 85f1dc7906b795d41a481075b369663d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7670197
+      value: -6.277
       objectReference: {fileID: 0}
     - target: {fileID: 1312916475655458834, guid: 85f1dc7906b795d41a481075b369663d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2844641
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 1312916475655458834, guid: 85f1dc7906b795d41a481075b369663d,
         type: 3}
@@ -1232,6 +1250,16 @@ PrefabInstance:
     - target: {fileID: 1312916475655458834, guid: 85f1dc7906b795d41a481075b369663d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535522617402619318, guid: 85f1dc7906b795d41a481075b369663d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535522617402619318, guid: 85f1dc7906b795d41a481075b369663d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1468,23 +1496,174 @@ PrefabInstance:
       propertyPath: RightLimit
       value: 
       objectReference: {fileID: 1960574773}
-    - target: {fileID: 8478162243620258366, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+    - target: {fileID: 8478162243620258364, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162243620258360, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644268, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644268, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644265, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_text
+      value: Press Any Key to Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 1028
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 5.1643033
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
         type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8478162243620258366, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
         type: 3}
+      propertyPath: m_renderer
+      value: 
+      objectReference: {fileID: 958095027}
+    - target: {fileID: 3003805605696007666, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367209144617674335, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916760120542890297, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8478162244367644271, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+    - target: {fileID: 5916760120542890297, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
         type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: Texts.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: PlayerInput
+      value: 
+      objectReference: {fileID: 1986039638}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: IntroBackground
+      value: 
+      objectReference: {fileID: 1684911878}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: IntroText
+      value: 
+      objectReference: {fileID: 1968597531}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: Texts.Array.data[0]
+      value: Wake up.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: Texts.Array.data[1]
+      value: That gate won't open by itself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: Texts.Array.data[2]
+      value: Sacrifices must be made.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: Texts.Array.data[3]
+      value: Bring them to this altar in front of the gate, that should do it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: Texts.Array.data[4]
+      value: Bring them to this altar in front of the gate, that should do it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: SacrificesColor.r
+      value: 0.4433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: SacrificesColor.g
+      value: 0.018823417
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: SacrificesColor.b
+      value: 0.018823417
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010470311371199876, guid: 7f0c5a2d2a9893246946ae5e028a2ece,
+        type: 3}
+      propertyPath: SacrificesColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958095021, guid: 7f0c5a2d2a9893246946ae5e028a2ece, type: 3}
+      propertyPath: m_Name
+      value: Skip
+      objectReference: {fileID: 0}
+    - target: {fileID: 958095026, guid: 7f0c5a2d2a9893246946ae5e028a2ece, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 958095024, guid: 7f0c5a2d2a9893246946ae5e028a2ece, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958095024, guid: 7f0c5a2d2a9893246946ae5e028a2ece, type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
