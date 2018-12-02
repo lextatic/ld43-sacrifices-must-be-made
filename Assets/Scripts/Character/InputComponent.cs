@@ -19,7 +19,7 @@ public class InputComponent : MonoBehaviour
 	public void Update()
 	{
 		Horizontal = Input.GetAxisRaw("Horizontal");
-		Jump = Jump || Input.GetKeyDown(KeyCode.Space);
+		Jump = Jump || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
 		// Run = Input.GetKey(KeyCode.LeftControl);
 	}
 }
