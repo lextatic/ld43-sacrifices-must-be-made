@@ -58,6 +58,7 @@ public class BirdMove : MonoBehaviour
 		View.transform.Translate(0, Time.deltaTime * viewMoveVelocity * (viewMoveUp ? 1 : -1), 0);
 	}
 
+#if UNITY_EDITOR
 	public void OnDrawGizmos()
 	{
 		//
@@ -74,4 +75,5 @@ public class BirdMove : MonoBehaviour
 			Gizmos.DrawSphere(transform.position, Radius);
 		}
 	}
+#endif
 }

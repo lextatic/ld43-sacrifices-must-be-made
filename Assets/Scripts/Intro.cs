@@ -70,6 +70,11 @@ public class Intro : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
+
 		if (introStarted && !introEnded)
 		{
 			IntroText.color = Color.Lerp(baseColor, targetColor, Mathf.Min((Time.time - startTime) / 1f, 1));
